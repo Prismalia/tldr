@@ -17,5 +17,5 @@
 
 - [u]pdate the local cache of tldr pages:
 
-`TLDR_PAGES_SOURCE_LOCATION="https://raw.githubusercontent.com/Prismalia/tldr/main/pages" tldr -u`
+`tldr -u`
 
