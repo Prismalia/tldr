@@ -19,6 +19,31 @@
 [license-image]: https://img.shields.io/badge/license-CC_BY_4.0-blue.svg?label=License
 </div>
 
+## Prismalia adaptation
+
+Welcome to the Prismalia fork of tldr. tldr is an extremely handy command line 
+tool, which serves as a memory aid for when you don't remember if it's `ln -s symlink /path/to/file`
+or maybe `ln -s /path/to/file symlink`. Save your brain-RAM, type `tldr ln`.
+
+Why not simply use man-pages? tldr is faster and gets the
+job done most of the times.
+
+At Prismalia, we use special tools like `cookiecutter` or `cblack` which are not 
+natively in the tldr main repo. That's why this fork was born. Contribution
+guidelines will come.
+
+### How to install?
+
+Install tldr using the usual instructions in the next section. On top of that, 
+add this instruction to your `bashrc` or `zshrc`.
+```{}
+export TLDR_PAGES_SOURCE_LOCATION="https://raw.githubusercontent.com/Prismalia/tldr/master/pages"
+```
+Following this, run this to update the tldr cache with Prismalia pages:
+```{}
+tldr -u
+```
+
 ## What is tldr-pages?
 
 The **tldr-pages** project is a collection of community-maintained help pages
